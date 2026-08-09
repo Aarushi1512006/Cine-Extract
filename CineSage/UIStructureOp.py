@@ -67,12 +67,12 @@ CUSTOM_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    --bg: #0F0F12;
-    --surface: #1E1E24;
-    --text: #FFFFFF;
-    --muted: #A0A0A5;
-    --accent: #E50914;
-    --accent-2: #E11D48;
+    --bg: #1B1225;
+    --surface: #2A1D3C;
+    --text: #FDF6EE;
+    --muted: #B8A9C9;
+    --accent: #FFB59E;
+    --accent-2: #C9A0DC;
 }
 
 html, body, [class*="css"] {
@@ -90,16 +90,17 @@ html, body, [class*="css"] {
 .stButton > button[kind="primary"] {
     background: var(--accent) !important;
     border: none !important;
-    color: #fff !important;
+    color: #2A1230 !important;
     font-weight: 700 !important;
 }
 .stButton > button[kind="primary"]:hover {
     background: var(--accent-2) !important;
+    color: #1B1225 !important;
 }
 .stTextArea textarea, .stTextInput input {
     background: var(--surface) !important;
     color: var(--text) !important;
-    border: 1px solid #2c2c34 !important;
+    border: 1px solid #3B2A54 !important;
 }
 .stTextArea textarea:focus, .stTextInput input:focus {
     border-color: var(--accent) !important;
@@ -109,7 +110,7 @@ html, body, [class*="css"] {
 /* ---------- Input Card ---------- */
 .input-card {
     background: var(--surface);
-    border: 1px solid #2a2a31;
+    border: 1px solid #3B2A54;
     border-radius: 18px;
     padding: 1.6rem 1.8rem;
     margin-bottom: 1.5rem;
@@ -123,10 +124,10 @@ html, body, [class*="css"] {
     padding: 3.2rem 2.5rem 2.2rem 2.5rem;
     margin-bottom: 2rem;
     background:
-        radial-gradient(circle at 15% 15%, rgba(229,9,20,0.30), transparent 55%),
-        radial-gradient(circle at 90% 0%, rgba(225,29,72,0.18), transparent 50%),
-        linear-gradient(160deg, #17171c 0%, #1a1a20 55%, #0F0F12 100%);
-    border: 1px solid #2a2a31;
+        radial-gradient(circle at 15% 15%, rgba(255,181,158,0.22), transparent 55%),
+        radial-gradient(circle at 90% 0%, rgba(201,160,220,0.28), transparent 50%),
+        linear-gradient(160deg, #241735 0%, #2A1D3C 55%, #1B1225 100%);
+    border: 1px solid #3B2A54;
 }
 
 .hero-eyebrow {
@@ -168,9 +169,9 @@ html, body, [class*="css"] {
     font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.3px;
-    color: #fff;
+    color: #2A1230;
     background: var(--accent);
-    box-shadow: 0 2px 10px rgba(229,9,20,0.25);
+    box-shadow: 0 2px 10px rgba(255,181,158,0.20);
 }
 
 .theme-pill {
@@ -178,9 +179,9 @@ html, body, [class*="css"] {
     border-radius: 999px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--muted);
+    color: var(--accent-2);
     background: var(--surface);
-    border: 1px solid #2c2c34;
+    border: 1px solid #3B2A54;
 }
 
 /* ---------- Section headers ---------- */
@@ -198,13 +199,13 @@ html, body, [class*="css"] {
 /* ---------- Synopsis ---------- */
 .synopsis-card {
     background: var(--surface);
-    border: 1px solid #2a2a31;
+    border: 1px solid #3B2A54;
     border-left: 3px solid var(--accent);
     border-radius: 14px;
     padding: 1.5rem 1.7rem;
     font-size: 1.02rem;
     line-height: 1.75;
-    color: #E8E8EA;
+    color: #EDE3F3;
 }
 
 /* ---------- Director banner ---------- */
@@ -213,7 +214,7 @@ html, body, [class*="css"] {
     align-items: center;
     gap: 1.1rem;
     background: var(--surface);
-    border: 1px solid #2a2a31;
+    border: 1px solid #3B2A54;
     border-left: 3px solid var(--accent-2);
     border-radius: 14px;
     padding: 1.1rem 1.4rem;
@@ -224,13 +225,13 @@ html, body, [class*="css"] {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.4rem;
-    color: white;
+    color: #2A1230;
     flex-shrink: 0;
 }
 
@@ -253,7 +254,7 @@ html, body, [class*="css"] {
     text-align: center;
     padding: 0.9rem 0.5rem 1rem 0.5rem;
     background: var(--surface);
-    border: 1px solid #2a2a31;
+    border: 1px solid #3B2A54;
     border-radius: 14px;
 }
 
@@ -267,9 +268,9 @@ html, body, [class*="css"] {
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
-    color: white;
+    color: #2A1230;
     background: var(--accent);
-    border: 2px solid #2c2c34;
+    border: 2px solid #3B2A54;
 }
 
 .cast-name {
@@ -286,7 +287,7 @@ html, body, [class*="css"] {
 /* ---------- Rating ---------- */
 .rating-card {
     background: var(--surface);
-    border: 1px solid #2a2a31;
+    border: 1px solid #3B2A54;
     border-radius: 16px;
     padding: 1.5rem;
     text-align: center;
@@ -309,7 +310,7 @@ html, body, [class*="css"] {
 
 hr.divider {
     border: none;
-    border-top: 1px solid #2a2a31;
+    border-top: 1px solid #3B2A54;
     margin: 2.2rem 0;
 }
 </style>
@@ -317,11 +318,11 @@ hr.divider {
 
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
-# Single accent color for genre pills (Popcorn Red), per the theme's 10% accent rule
-GENRE_ACCENT = "#E50914"
+# Single accent color for genre pills (soft peach), per the theme's 10% accent rule
+GENRE_ACCENT = "#FFB59E"
 
-# Muted variants of the accent for cast avatars, so they read as a family, not a rainbow
-AVATAR_PALETTE = ["#E50914", "#E11D48", "#B0060F", "#C41230", "#8F0710", "#D91A3C"]
+# Peach/purple family for cast avatars, so they read as a coordinated set, not a rainbow
+AVATAR_PALETTE = ["#FFB59E", "#C9A0DC", "#F4A88A", "#B892D6", "#E8A87C", "#A87FC2"]
 
 
 def genre_color(g: str) -> str:
@@ -503,7 +504,7 @@ if movie:
                     st.markdown(
                         f"""
                         <div class="cast-card">
-                            <div class="cast-avatar" style="background:{color_for(actor)};">
+                            <div class="cast-avatar" style="background:{color_for(actor)};color:#2A1230;">
                                 {initials(actor)}
                             </div>
                             <div class="cast-name">{actor}</div>
@@ -571,10 +572,10 @@ if movie:
         for rev in st.session_state.reviews:
             st.markdown(
                 f"""
-                <div style="background:#1E1E24;border:1px solid #2a2a31;border-left:3px solid #E50914;
+                <div style="background:#2A1D3C;border:1px solid #3B2A54;border-left:3px solid #FFB59E;
                             border-radius:12px;padding:0.8rem 1rem;margin-bottom:0.6rem;">
-                    <div style="font-weight:600;font-size:0.85rem;color:#fff;">{rev['name']}</div>
-                    <div style="font-size:0.85rem;color:#A0A0A5;margin-top:0.2rem;">{rev['text']}</div>
+                    <div style="font-weight:600;font-size:0.85rem;color:#FDF6EE;">{rev['name']}</div>
+                    <div style="font-size:0.85rem;color:#B8A9C9;margin-top:0.2rem;">{rev['text']}</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
